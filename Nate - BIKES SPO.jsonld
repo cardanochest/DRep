@@ -1,0 +1,114 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Nate - BIKES SPO"
+    },
+    "motivations": {
+      "@value": "I'm motivated to become a DRep because of the opportunity to educate more people on the exciting technology of cryptocurrency and decentralized ecosystems. To help shape Cardano's bright future of decentralized finance infrastructure and bring more people into the ecosystem to experience it. Promoting the technical aspects of the chain I think will harness that ability for people to understand it's capabilities."
+    },
+    "objectives": {
+      "@value": "As a DRep, I want to expand on the educational aspects of the ecosystem, by bridging the gap between the normal user and experienced one. Raising the voice of smaller advocates for the ecosystem by bringing to the light issues that can impact the ecosystem. As with any governance system, every voice should be heard and that is my goal as a DRep."
+    },
+    "paymentAddress": {
+      "@value": "addr1qxewcuhnkqyy8hwzj892n4hfsm0sr4da5kd3ds55r9n2c4qmzpx26qpydf0jw0k69tpu90pauk5022xpplfzn2ym0ees8dlwlh"
+    },
+    "qualifications": {
+      "@value": "I have been in the Cardano ecosystem since 2018 and have seen many of the accomplishments and pitfalls that the ecosystem has experienced. Running a pool on Cardano since 2021 has been an extremely rewarding experience, from the process of creating node infrastructure and actively participating in governance actions, all have readied me for the future of Cardano. \n\nTraditionally, I come from the video production world, freelancing for various corporations across the city of Chicago. I'd love to bring more people together with engaging content of the ecosystem through a professional lens. "
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Twitter/X"
+        },
+        "uri": {
+          "@value": "https://x.com/cardanobikes"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Website"
+        },
+        "uri": {
+          "@value": "www.cardanobikes.com"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Twitter/X"
+        },
+        "uri": {
+          "@value": "https://x.com/cardanobikes"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Website"
+        },
+        "uri": {
+          "@value": "www.cardanobikes.com"
+        }
+      }
+    ]
+  }
+}
